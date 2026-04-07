@@ -69,31 +69,57 @@ window.LAB_DATA = {
         name: "Ruihong Zeng",
         role: "Collaborating PhD · MBZUAI",
         interests: ["Factuality", "Fact-checking"],
-        image: "assets/img/person-visiting-1.svg"
+        image: "assets/img/Ruihong.jpg",
+        website: "https://scholar.google.com/citations?user=hCt0gK0AAAAJ&hl=zh-CN"
       },
       {
         name: "Hasan Iqbal",
         role: "Collaborating PhD · MBZUAI",
         interests: ["Fact-checking"],
-        image: "assets/img/Hasan.png"
+        image: "assets/img/Hasan.png",
+        website: "https://scholar.google.com/citations?user=fP77klEAAAAJ&hl=en"
       },
       {
         name: "Minh Ngoc Ta",
         role: "Collaborating PhD · MBZUAI",
         interests: ["Machine-generated content detection", "Ambiguous Clarification"],
-        image: "assets/img/Minh.png"
+        image: "assets/img/Minh.png",
+        website: "https://scholar.google.com/citations?user=yfg2V6IAAAAJ&hl=en"
       },
       {
         name: "Yan Lin",
         role: "Collaborating PhD · Newcastle University",
         interests: ["Skilled agents", "AI for finance"],
-        image: "assets/img/person-visiting-1.svg"
+        image: "assets/img/linyan.jpg",
+        website: "https://yanlin-quinne.github.io/"
       },
       {
         name: "Yuyang Dai",
-        role: "Collaborating Undergraduate · Capital University of Economics and Business",
+        role: "Collaborating Msc · UC Berkeley",
         interests: ["Personal digital twins", "AI for finance"],
-        image: "assets/img/person-visiting-1.svg"
+        image: "assets/img/yuyang.jpg",
+        website: "https://scholar.google.com/citations?user=knQDa8IAAAAJ&hl=en"
+      },
+      {
+        name: "Junjie Liao",
+        role: "Collaborating Undergraduate · Beijing Normal University",
+        interests: ["Fact-checking"],
+        image: "assets/img/junjie.png",
+        website: "https://scholar.google.com/citations?user=lFwikWEAAAAJ&hl=en"
+      },
+      {
+        name: "Karun Sharma",
+        role: "Collaborating Undergraduate · Bennett University",
+        interests: ["Meeting Proxy"],
+        image: "assets/img/Karun.png",
+        website: "https://scholar.google.com/citations?user=lY-tnZAAAAAJ&hl=en"
+      },
+      {
+        name: "Vidushee Vats",
+        role: "Collaborating Undergraduate · Bennett University",
+        interests: ["Meetings Proxy"],
+        image: "assets/img/vidushee.png",
+        website: "https://scholar.google.com/citations?user=ivYo0q4AAAAJ&hl=en"     
       }
     ]
   },

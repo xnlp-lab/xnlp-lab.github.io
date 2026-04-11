@@ -111,15 +111,17 @@ window.LAB_DATA = {
         name: "Karun Sharma",
         role: "Collaborating Undergraduate · Bennett University",
         interests: ["Meeting Proxy"],
-        image: "assets/img/Karun.png",
-        website: "https://scholar.google.com/citations?user=lY-tnZAAAAAJ&hl=en"
+        image: "assets/img/karun.png",
+        website: "https://anonymous-atom.github.io/"
+        // website: "https://scholar.google.com/citations?user=lY-tnZAAAAAJ&hl=en"
       },
       {
         name: "Vidushee Vats",
         role: "Collaborating Undergraduate · Bennett University",
         interests: ["Meetings Proxy"],
         image: "assets/img/vidushee.png",
-        website: "https://scholar.google.com/citations?user=ivYo0q4AAAAJ&hl=en"     
+        website: "https://koookieee.github.io/",
+        // "https://scholar.google.com/citations?user=ivYo0q4AAAAJ&hl=en"     
       }
     ]
   },

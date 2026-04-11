@@ -127,12 +127,12 @@
             <p>Reasoning, safety, factuality, and empathy of LLMs and agentic systems.</p>
           </article>
           <article class="card reveal delay-1">
-            <h3>Digital Twins</h3>
-            <p>Personal digital twins simulating users to enhance producitity and human well-being.</p>
+            <h3>Digital Divisions</h3>
+            <p>Personal digital divisions simulating users to enhance productivity and human well-being.</p>
           </article>
           <article class="card reveal delay-2">
-            <h3>Continous Learning</h3>
-            <p>Enable models and systems to life-long learning ability.</p>
+            <h3>Continuous Learning</h3>
+            <p>Enable models and systems with lifelong learning.</p>
           </article>
           <article class="card reveal">
             <h3>AI for Good</h3>

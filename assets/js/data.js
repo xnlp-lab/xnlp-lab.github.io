@@ -111,7 +111,7 @@ window.LAB_DATA = {
         name: "Karun Sharma",
         role: "Collaborating Undergraduate · Bennett University",
         interests: ["Meeting Proxy"],
-        image: "assets/img/karun.png",
+        image: "assets/img/Karun.png",
         website: "https://anonymous-atom.github.io/"
         // website: "https://scholar.google.com/citations?user=lY-tnZAAAAAJ&hl=en"
       },

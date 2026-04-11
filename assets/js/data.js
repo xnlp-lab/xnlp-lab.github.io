@@ -182,65 +182,71 @@ window.LAB_DATA = {
     // }
   ],
   projects: {
-    openSource: [
-      {
-        name: "SearchStateKit",
-        status: "Open Source",
-        summary: "A toolkit for maintaining explicit search states, controller policies, and audit logs for search agents.",
-        stack: ["Python", "FastAPI", "Elasticsearch", "Vector DB"],
-        link: "#"
-      },
-      {
-        name: "Diff-Continuation",
-        status: "Open Source",
-        summary: "Reference code for converting AR language models into discrete and continuous diffusion language models.",
-        stack: ["PyTorch", "DeepSpeed", "Transformers"],
-        link: "#"
-      },
-      {
-        name: "EvalForge",
-        status: "Open Source",
-        summary: "A benchmark harness for interactive agents with trajectory logging, reward shaping, and human review.",
-        stack: ["Python", "W&B", "Docker"],
-        link: "#"
-      }
-    ],
     ongoing: [
       {
-        name: "WorldSim Reasoning Arena",
+        name: "Personal Digital Divisions",
         status: "In Progress",
-        summary: "An internal platform for training and evaluating language agents in tool-rich environments.",
-        milestones: ["Environment feedback design", "State-level critics", "Generalization tests"]
+        summary: "Two for companions, exploring how to preserve personas in long conversation across tasks; and a demo 'AI You' tracking the emotional state and personality traits. One for designing a meeting proxy to attend meetings on behalf of users, with pre-meeting preparation, in-meeting participation, and post-meeting reflection.",
       },
       {
-        name: "Evidence Atlas",
+        name: "Fact-checking",
         status: "In Progress",
-        summary: "A hybrid enterprise search system for structured and unstructured evidence with precise constraint handling.",
-        milestones: ["Search state controller", "Constraint verifier", "Speculative retrieval"]
+        summary: "Three parallel fact-checing projects for medical QA, identifying multimodal inconsistency and optimizing deposition and retrieval.",
+        // milestones: ["Shared project dashboards", "Long-horizon memory", "Actionable summaries"]
       },
       {
-        name: "Lab Compass",
+        name: "LLM and Agentic Safety",
         status: "In Progress",
-        summary: "A collaborative memory and workflow layer for research planning, paper reading, and meeting follow-up.",
-        milestones: ["Shared project dashboards", "Long-horizon memory", "Actionable summaries"]
+        summary: "Jailbreaking and defenses for open-source LLMs; how to behave safely conditioned on constraints and preferences",
+        // milestones: ["Search state controller", "Constraint verifier", "Speculative retrieval"]
+      },
+      {
+        name: "Bulgarian Language Processing",
+        status: "In Progress",
+        summary: "Evaluating and improving Bulgarian language generation, enabling applications for education.",
+        // milestones: ["Search state controller", "Constraint verifier", "Speculative retrieval"]
       }
-    ]
+    ],
+    seekcollaborators: [
+      {
+        name: "Safety Conditioning on Dynamic Constraints",
+        status: "Seeking Collaborators",
+        summary: "Behave safely conditioned on dynamic constraints from country regulations, domain policies, user preferences and authentication.",
+        // stack: ["Python", "FastAPI", "Elasticsearch", "Vector DB"],
+        // link: "#"
+      },
+      {
+        name: "Emapthy Evaluation",
+        status: "Seeking Collaborators",
+        summary: "Due to the subjectivity, evaluating whether long-term conversations are empathetic or not is challenging. We are seeking collaborators to explore empathy in AI and multi-objective optimization across reason, factuality, safety, and empathy.",
+        // stack: ["PyTorch", "DeepSpeed", "Transformers"],
+        // link: "#"
+      },
+      // {
+      //   name: "EvalForge",
+      //   status: "Open Source",
+      //   summary: "A benchmark harness for interactive agents with trajectory logging, reward shaping, and human review.",
+      //   stack: ["Python", "W&B", "Docker"],
+      //   link: "#"
+      // }
+    ],
   },
+  // We can have a notebook style for recording our activities, with time stamp, images and captions, as our group memory with all photos (someone visits us, or we attend conferences).
   activities: [
     {
-      title: "Annual Lab Retreat",
-      caption: "A two-day retreat for research planning, lightning talks, and team building.",
-      image: "assets/img/activity-retreat.svg"
+      title: "Seasonal Team Escapes",
+      caption: "Seasonal team experiences, from seaside escapes and ski trips to relaxed BBQ gatherings, designed for connection and unwinding.",
+      image: "assets/img/activity_ski_2026_03.jpg"
     },
     {
-      title: "Paper Jam Fridays",
-      caption: "A lively weekly reading group with rotating discussants and critique sessions.",
-      image: "assets/img/activity-paperjam.svg"
+      title: "Happy Thursday",
+      caption: "Weekly pizza day paired with quick lightning talks.",
+      image: "assets/img/activity_elena_kaiyang_2026_03.jpg"
     },
     {
-      title: "Open Demo Day",
-      caption: "We invite collaborators and students to try our newest systems and share feedback.",
-      image: "assets/img/activity-demo.svg"
+      title: "Group Meals",
+      caption: "Casual weekend lunches or dinners to cook, talk, and bond beyond work.",
+      image: "assets/img/activity_yun_meal_2026_03.jpg"
     }
   ],
   connections: [
@@ -253,28 +259,43 @@ window.LAB_DATA = {
   ],
   recruit: {
     regular: [
-      "Prospective PhD students interested in language agents, retrieval, reinforcement learning, or trustworthy AI",
-      "Research interns with strong engineering skills in Python, PyTorch, and systems prototyping",
-      "Visiting students eager to explore agent evaluation, memory systems, and multimodal interaction"
+      "Motivated PhD students interested in personalization, continuous learning, agentic safety, or trustworthy AI",
+      "Postdoctoral researchers with a strong publication record in NLP or machine learning, and interest in reliable AI and personal digital divisions",
+      "Master students seeking thesis supervision in NLP, especially within EU or through ELLIS",
+      "Remote research interns with passion for NLP, AI safety, or personal digital divisions",
+      // "Visiting students with a strong publication record in NLP or machine learning, and interest in reliable AI and personal digital divisions","
     ],
     urgent: [
       {
-        title: "Emergent Recruit · Research Engineer",
-        summary: "Build robust evaluation and logging infrastructure for long-horizon language-agent experiments.",
-        needs: ["PyTorch", "Distributed training", "Benchmark tooling"],
-        contact: "jobs-esl@youruniversity.edu"
+        title: "Recruit · PhD students",
+        summary: "Establish trustworthy AI with uncertainty estimation and interpretability; Build personal digital divisions with a focus on personalization, memory, continuous learning and privacy protection.",
+        needs: ["Passion for continuous learning, personalization, reliable AI", "Research experience", "Self-motivation", "Strong coding skills"],
+        contact: "yuxia.wang@insait.ai",
+        link: "https://insait.ai/phd/"
       },
       {
-        title: "Emergent Recruit · Search Systems Intern",
-        summary: "Prototype hybrid retrieval pipelines and interface components for enterprise search scenarios.",
-        needs: ["Search / IR", "APIs", "Front-end basics"],
-        contact: "jobs-esl@youruniversity.edu"
+        title: "Recruit · Postdoctoral researcher",
+        summary: "Lead research initiatives in trustworthy AI (e.g., uncertainty estimation, interpretability).",
+        needs: ["NLP research experience", "Strong publication record", "Extensive collaborations", "Passion for reliable AI and personal digital divisions"],
+        contact: "yuxia.wang@insait.ai"
       },
       {
-        title: "Emergent Recruit · Visiting Student",
-        summary: "Join a fast-moving project on uncertainty-aware feedback and factual revision in long-form generation.",
-        needs: ["NLP", "Evaluation", "Curiosity"],
-        contact: "jobs-esl@youruniversity.edu"
+        title: "Supervise · Master Thesis",
+        summary: "For Master students, especially within EU or through ELLIS, we are very interested in hosting Master Thesis, Semester Projects, and general research collaboration. The topics can be flexible within NLP, but ideally related to trustworthy AI (reasoning, factuality, safety, calibration, interpretability); and personal digital divisions (personalization,memory, continuous learning, privacy protection).",
+        needs: ["NLP research experience", "Strong coding skills", "PhD interest"],
+        contact: "yuxia.wang@insait.ai"
+      },
+      {
+        title: "Collaborate · Remote research interns",
+        summary: "Join a fast-moving project on LLM & agentic personalization, safety, continous learning, and empathy, fact-checking, AI for medical and financial applications, or other NLP research.",
+        needs: ["Self-motivated", "Strong coding skills", "Passion for NLP", "Available for at least 3 months"],
+        contact: "yuxia.wang@insait.ai"
+      },
+      {
+        title: "Collaborate · Visiting students",
+        summary: "Summer internship or semester-long visiting research for students with a strong publication record in NLP or machine learning, and seeking research experience in reliable AI, personal digital divisions or related fields.",
+        needs: ["Self-motivated", "Strong publication record"],
+        contact: "yuxia.wang@insait.ai"
       }
     ]
   }

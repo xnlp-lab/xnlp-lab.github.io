@@ -326,10 +326,10 @@
   }
 
   function renderProjects() {
-    const projectCards = (items, kind) =>
-      items
-        .map(
-          (item, idx) => `
+  const projectCards = (items, kind) =>
+    items
+      .map(
+        (item, idx) => `
           <article class="card project-card reveal delay-${idx % 3}">
             <div class="project-top">
               <span class="chip">${item.status}</span>
@@ -337,37 +337,43 @@
             </div>
             <p>${item.summary}</p>
             ${
-              kind === "open"
-                ? `<div class="tag-row">${item.stack.map((x) => `<span class="tag">${x}</span>`).join("")}</div>
-                   <a class="button tertiary" href="${item.link}">Repository</a>`
-                : `<ul class="clean-list">${item.milestones.map((m) => `<li>${m}</li>`).join("")}</ul>`
+              kind === "seek"
+                ? `
+                  ${item.stack ? `<div class="tag-row">${item.stack.map((x) => `<span class="tag">${x}</span>`).join("")}</div>` : ""}
+                  ${item.link ? `<a class="button tertiary" href="${item.link}">Learn more</a>` : ""}
+                `
+                : `
+                  ${item.milestones ? `<ul class="clean-list">${item.milestones.map((m) => `<li>${m}</li>`).join("")}</ul>` : ""}
+                `
             }
           </article>
         `
-        )
-        .join("");
+      )
+      .join("");
 
-    const main = document.getElementById("page-root");
-    main.innerHTML = `
-      <section class="page-hero container reveal visible">
-        <span class="eyebrow">Projects</span>
-        <h1>Open systems and active research</h1>
-        <p>We care about both reusable software and ambitious ongoing ideas. This page showcases open-source releases as well as projects still being built.</p>
-      </section>
-      <section class="section">
-        <div class="container section-head reveal">
-          <h2>Open-source projects</h2>
-        </div>
-        <div class="container project-grid">${projectCards(data.projects.openSource, "open")}</div>
-      </section>
-      <section class="section">
-        <div class="container section-head reveal">
-          <h2>Ongoing projects</h2>
-        </div>
-        <div class="container project-grid">${projectCards(data.projects.ongoing, "ongoing")}</div>
-      </section>
-    `;
-  }
+  const main = document.getElementById("page-root");
+  main.innerHTML = `
+    <section class="page-hero container reveal visible">
+      <span class="eyebrow">Projects</span>
+      <h1>Active research and collaboration opportunities</h1>
+      <p>We pursue ongoing research projects and also welcome collaborators on selected topics where shared expertise can accelerate progress.</p>
+    </section>
+
+    <section class="section">
+      <div class="container section-head reveal">
+        <h2>Seeking collaborators</h2>
+      </div>
+      <div class="container project-grid">${projectCards(data.projects.seekcollaborators || [], "seek")}</div>
+    </section>
+
+    <section class="section">
+      <div class="container section-head reveal">
+        <h2>Ongoing projects</h2>
+      </div>
+      <div class="container project-grid">${projectCards(data.projects.ongoing || [], "ongoing")}</div>
+    </section>
+  `;
+}
 
   function renderActivities() {
     const main = document.getElementById("page-root");

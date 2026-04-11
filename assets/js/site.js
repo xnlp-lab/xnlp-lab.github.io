@@ -123,20 +123,20 @@
         </div>
         <div class="container topic-grid">
           <article class="card reveal">
-            <h3>Language Agents</h3>
-            <p>Reasoning, decision making, and long-horizon interaction with tools, memory, and environments.</p>
+            <h3>Reliable AI</h3>
+            <p>Reasoning, safety, factuality, and empathy of LLMs and agentic systems.</p>
           </article>
           <article class="card reveal delay-1">
             <h3>Digital Twins</h3>
-            <p>Autonomous digital twins for real-world applications.</p>
+            <p>Personal digital twins simulating users to enhance producitity and human well-being.</p>
           </article>
           <article class="card reveal delay-2">
-            <h3>AI Security</h3>
-            <p>AI security, privacy, and trustworthy AI.</p>
+            <h3>Continous Learning</h3>
+            <p>Enable models and systems to life-long learning ability.</p>
           </article>
           <article class="card reveal">
-            <h3>Multimodal AI</h3>
-            <p>Diffusion-based multimodal generation and reasoning.</p>
+            <h3>AI for Good</h3>
+            <p>AI applications for medical and financial domains.</p>
           </article>
         </div>
       </section>
@@ -453,7 +453,6 @@
             </div>
           </article>
           <article class="card urgent-card reveal delay-1">
-            // <span class="eyebrow">Emergent Recruit</span>
             <h2>Openings</h2>
             <div class="urgent-list">
               ${data.recruit.urgent

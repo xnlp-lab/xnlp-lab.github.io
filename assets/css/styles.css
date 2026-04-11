@@ -222,12 +222,14 @@ img { display: block; max-width: 100%; }
 .hero-card {
   border-radius: 30px;
   overflow: hidden;
+  padding: 22px;   /* ← ADD THIS */
 }
 
 .hero-card img {
   width: 100%;
   aspect-ratio: 16 / 10;
   object-fit: cover;
+  border-radius: 20px;   /* optional but looks better */
 }
 
 .hero-card-body {

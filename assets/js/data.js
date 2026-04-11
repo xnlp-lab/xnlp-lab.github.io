@@ -19,7 +19,7 @@ window.LAB_DATA = {
       { value: "4", label: "Students" },
       { value: "10", label: "International Collaborators" },
       { value: "3", label: "Research Topics" },
-      { value: "10", label: "On-going Projects" },
+      { value: "3+", label: "Openings" },
     ]
   },
   people: {

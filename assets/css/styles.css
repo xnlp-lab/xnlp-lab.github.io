@@ -408,6 +408,12 @@ img { display: block; max-width: 100%; }
   gap: 16px;
 }
 
+.project-top {
+  flex-direction: column;   /* stack vertically */
+  align-items: flex-start;  /* left align */
+  gap: 6px;                 /* tighter spacing */
+}
+
 .project-card {
   display: grid;
   gap: 16px;

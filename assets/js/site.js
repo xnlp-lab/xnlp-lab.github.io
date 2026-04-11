@@ -10,7 +10,7 @@
       ["News", "news.html"],
       ["Projects", "projects.html"],
       ["Activities", "activities.html"],
-      ["Connections", "connections.html"],
+      // ["Connections", "connections.html"],
       ["Join us", "join.html"]
     ];
 
@@ -105,7 +105,7 @@
         </div>
         <aside class="hero-panel">
           <div class="hero-card">
-            <img src="assets/img/hero-lab.svg" alt="Lab illustration"/>
+            <img src="assets/img/cover.png" alt="Lab illustration"/>
             <div class="hero-card-body">
               <p class="eyebrow light">Institution</p>
               <h2>${data.lab.institution}</h2>
@@ -332,8 +332,8 @@
         (item, idx) => `
           <article class="card project-card reveal delay-${idx % 3}">
             <div class="project-top">
-              <span class="chip">${item.status}</span>
               <h3>${item.name}</h3>
+              <span class="chip">${item.status}</span>
             </div>
             <p>${item.summary}</p>
             ${
@@ -403,33 +403,33 @@
     `;
   }
 
-  function renderConnections() {
-    const main = document.getElementById("page-root");
-    main.innerHTML = `
-      <section class="page-hero container reveal visible">
-        <span class="eyebrow">Connections</span>
-        <h1>Organizations we work with</h1>
-        <p>Our collaborations cross academia, industry, and open-source communities. We value partnerships that strengthen research quality and broaden real-world impact.</p>
-      </section>
-      <section class="section">
-        <div class="container connections-grid">
-          ${data.connections
-            .map(
-              (item, idx) => `
-                <article class="card connection-card reveal delay-${idx % 3}">
-                  <div class="connection-mark">${item.name.slice(0, 2).toUpperCase()}</div>
-                  <div>
-                    <h3>${item.name}</h3>
-                    <p>${item.type}</p>
-                  </div>
-                </article>
-              `
-            )
-            .join("")}
-        </div>
-      </section>
-    `;
-  }
+  // function renderConnections() {
+  //   const main = document.getElementById("page-root");
+  //   main.innerHTML = `
+  //     <section class="page-hero container reveal visible">
+  //       <span class="eyebrow">Connections</span>
+  //       <h1>Organizations we work with</h1>
+  //       <p>Our collaborations cross academia, industry, and open-source communities. We value partnerships that strengthen research quality and broaden real-world impact.</p>
+  //     </section>
+  //     <section class="section">
+  //       <div class="container connections-grid">
+  //         ${data.connections
+  //           .map(
+  //             (item, idx) => `
+  //               <article class="card connection-card reveal delay-${idx % 3}">
+  //                 <div class="connection-mark">${item.name.slice(0, 2).toUpperCase()}</div>
+  //                 <div>
+  //                   <h3>${item.name}</h3>
+  //                   <p>${item.type}</p>
+  //                 </div>
+  //               </article>
+  //             `
+  //           )
+  //           .join("")}
+  //       </div>
+  //     </section>
+  //   `;
+  // }
 
   function renderJoin() {
     const main = document.getElementById("page-root");
@@ -453,7 +453,7 @@
             </div>
           </article>
           <article class="card urgent-card reveal delay-1">
-            <span class="eyebrow">Emergent Recruit</span>
+            // <span class="eyebrow">Emergent Recruit</span>
             <h2>Openings</h2>
             <div class="urgent-list">
               ${data.recruit.urgent
@@ -496,9 +496,9 @@
     case "activities":
       renderActivities();
       break;
-    case "connections":
-      renderConnections();
-      break;
+    // case "connections":
+    //   renderConnections();
+    //   break;
     case "join":
       renderJoin();
       break;

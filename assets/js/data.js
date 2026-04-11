@@ -186,7 +186,7 @@ window.LAB_DATA = {
       {
         name: "Personal Digital Divisions",
         status: "In Progress",
-        summary: "Two for companions, exploring how to preserve personas in long conversation across tasks; and a demo 'AI You' tracking the emotional state and personality traits. One for designing a meeting proxy to attend meetings on behalf of users, with pre-meeting preparation, in-meeting participation, and post-meeting reflection.",
+        summary: "How to preserve personas in long conversation across tasks; A demo 'AI You' tracking the emotional state and personality traits; Meeting proxy to attend meetings on behalf of users.",
       },
       {
         name: "Fact-checking",
@@ -205,6 +205,12 @@ window.LAB_DATA = {
         status: "In Progress",
         summary: "Evaluating and improving Bulgarian language generation, enabling applications for education.",
         // milestones: ["Search state controller", "Constraint verifier", "Speculative retrieval"]
+      },
+      {
+        name: "General ML Questions",
+        status: "In Progress",
+        summary: "Why classification is better than generation on tasks with clear label space? How much noise can a testbed tolerate for subjective tasks?",
+        // milestones: ["Search state controller", "Constraint verifier", "Speculative retrieval"]
       }
     ],
     seekcollaborators: [
@@ -222,13 +228,13 @@ window.LAB_DATA = {
         // stack: ["PyTorch", "DeepSpeed", "Transformers"],
         // link: "#"
       },
-      // {
-      //   name: "EvalForge",
-      //   status: "Open Source",
-      //   summary: "A benchmark harness for interactive agents with trajectory logging, reward shaping, and human review.",
-      //   stack: ["Python", "W&B", "Docker"],
-      //   link: "#"
-      // }
+      {
+        name: "Machine-generated Video Detection",
+        status: "Seeking Collaborators",
+        summary: "Identifying machine-generated videos against misleading content, protecting users particularly children and elderly.",
+        // stack: ["Python", "W&B", "Docker"],
+        // link: "#"
+      }
     ],
   },
   // We can have a notebook style for recording our activities, with time stamp, images and captions, as our group memory with all photos (someone visits us, or we attend conferences).
@@ -275,8 +281,8 @@ window.LAB_DATA = {
       },
       {
         title: "Recruit · Postdoctoral researcher",
-        summary: "Lead research initiatives in trustworthy AI (e.g., uncertainty estimation, interpretability).",
-        needs: ["NLP research experience", "Strong publication record", "Extensive collaborations", "Passion for reliable AI and personal digital divisions"],
+        summary: "Lead research initiatives in trustworthy AI (e.g., uncertainty estimation, interpretability) and personal digital divisions.",
+        needs: ["NLP research experience", "Strong publication record", "Extensive collaborations", "Leadership"],
         contact: "yuxia.wang@insait.ai"
       },
       {

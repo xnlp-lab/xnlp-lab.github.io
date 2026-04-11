@@ -361,16 +361,16 @@
 
     <section class="section">
       <div class="container section-head reveal">
-        <h2>Seeking collaborators</h2>
+        <h2>Ongoing projects</h2>
       </div>
-      <div class="container project-grid">${projectCards(data.projects.seekcollaborators || [], "seek")}</div>
+      <div class="container project-grid">${projectCards(data.projects.ongoing || [], "ongoing")}</div>
     </section>
 
     <section class="section">
       <div class="container section-head reveal">
-        <h2>Ongoing projects</h2>
+        <h2>Seeking collaborators</h2>
       </div>
-      <div class="container project-grid">${projectCards(data.projects.ongoing || [], "ongoing")}</div>
+      <div class="container project-grid">${projectCards(data.projects.seekcollaborators || [], "seek")}</div>
     </section>
   `;
 }
@@ -454,7 +454,7 @@
           </article>
           <article class="card urgent-card reveal delay-1">
             <span class="eyebrow">Emergent Recruit</span>
-            <h2>Urgent openings</h2>
+            <h2>Openings</h2>
             <div class="urgent-list">
               ${data.recruit.urgent
                 .map(

@@ -241,7 +241,7 @@ window.LAB_DATA = {
     {
       title: "Happy Thursday",
       caption: "Weekly pizza day paired with quick lightning talks.",
-      image: "assets/img/activity_elena_kaiyang_2026_03.jpg"
+      image: "assets/img/activity_elena_kaiyang_2026_03.JPG"
     },
     {
       title: "Group Meals",

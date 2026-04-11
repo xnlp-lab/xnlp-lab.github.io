@@ -448,11 +448,13 @@ img { display: block; max-width: 100%; }
 .join-layout {
   display: grid;
   grid-template-columns: 1fr 1.05fr;
+  align-items: start;   /* ← add this */
 }
 
 .join-card, .urgent-card {
   display: grid;
   gap: 16px;
+  align-self: start;
 }
 
 .contact-panel {

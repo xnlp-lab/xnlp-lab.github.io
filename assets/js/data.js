@@ -101,6 +101,13 @@ window.LAB_DATA = {
         website: "https://scholar.google.com/citations?user=knQDa8IAAAAJ&hl=en"
       },
       {
+        name: "Kanwal Mehreen",
+        role: "Collaborating Msc · University of British Columbia",
+        interests: ["LLM Empathy"],
+        image: "assets/img/kanwal.png",
+        website: "https://kanwal-mehreen.netlify.app/"
+      },
+      {
         name: "Junjie Liao",
         role: "Collaborating Undergraduate · Beijing Normal University",
         interests: ["Fact-checking"],

@@ -289,24 +289,25 @@ img { display: block; max-width: 100%; }
 
 .memory-list {
   display: grid;
-  gap: 22px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
 }
 
 .memory-item {
-  display: grid;
-  grid-template-columns: 320px 1fr;
-  gap: 22px;
-  align-items: center;
+  padding: 0;
+  overflow: hidden;
+  display: block;
 }
 
 .memory-image img {
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
-  border-radius: 22px;
+  border-radius: 0;
 }
 
 .memory-copy {
+  padding: 20px;
   display: grid;
   gap: 10px;
 }
@@ -644,7 +645,7 @@ img { display: block; max-width: 100%; }
 }
 
 @media (max-width: 860px) {
-  .memory-item {
+  .memory-list {
     grid-template-columns: 1fr;
   }
 }

@@ -282,7 +282,7 @@ window.LAB_DATA = {
       title: "Prof. Preslav from MBZUAI Visit Us",
       description: "We hosted Prof. Preslav for research discussions and a lab dinner.",
       date: "2026-04-07",
-      image: "assets/img/memory_2026_0407_prof_preslav_visit.png"
+      image: "assets/img/memory_2026_0407_preslav_visit.png"
     },
     
   ],

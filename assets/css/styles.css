@@ -465,6 +465,30 @@ img { display: block; max-width: 100%; }
   align-self: start;
 }
 
+/* --- Why Join Section --- */
+.join-why-card {
+  margin-top: 22px;
+  display: grid;
+  gap: 18px;
+}
+
+.join-why-images {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.join-why-image img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 22px;
+}
+
+.join-why-list {
+  margin-top: 4px;
+}
+
 .contact-panel {
   margin-top: 6px;
   padding-top: 6px;
@@ -601,6 +625,9 @@ img { display: block; max-width: 100%; }
 }
 
 @media (max-width: 760px) {
+  .join-why-images {
+    grid-template-columns: 1fr;
+  }
   .nav {
     position: absolute;
     left: 16px;

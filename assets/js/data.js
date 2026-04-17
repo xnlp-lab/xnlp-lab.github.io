@@ -280,6 +280,25 @@ window.LAB_DATA = {
       "Remote research interns with passion for NLP, AI safety, or personal digital divisions",
       // "Visiting students with a strong publication record in NLP or machine learning, and interest in reliable AI and personal digital divisions","
     ],
+    whyJoin: {
+    title: "Why join INSAIT?",
+    images: [
+      {
+        src: "assets/img/view_from_office.png",
+        alt: "View from the INSAIT office"
+      },
+      {
+        src: "assets/img/office.png",
+        alt: "INSAIT office space"
+      }
+    ],
+    bullets: [
+      "Salary of €40,000 for PhD students, €60,000 for postdocs, and €80,000 for research scientists per year",
+      "Sufficient GPUs and API credits for research",
+      "Generous funding for conference travel and collaborative visits",
+      "Great office space and view for work"
+    ]
+  },
     urgent: [
       {
         title: "Recruit · PhD students",

@@ -437,7 +437,7 @@
       <section class="page-hero container reveal visible">
         <span class="eyebrow">Join us</span>
         <h1>Work with the lab</h1>
-        <p>We welcome students and collaborators who care deeply about rigorous research and thoughtful systems building. Reach out with a short introduction, your background, and research interests.</p>
+        <p>We welcome self-motivated students and collaborators who are interested in NLP and AI research. Reach out with a short introduction, research interests, desired positions and CV.</p>
       </section>
       <section class="section">
         <div class="container join-layout">
@@ -472,9 +472,76 @@
             </div>
           </article>
         </div>
+
+        <div class="container">
+          <article class="card join-why-card reveal">
+            <h2>${data.recruit.whyJoin.title}</h2>
+
+            <div class="join-why-images">
+              ${data.recruit.whyJoin.images
+                .map(
+                  (item) => `
+                    <div class="join-why-image">
+                      <img src="${item.src}" alt="${item.alt}" loading="lazy" />
+                    </div>
+                  `
+                )
+                .join("")}
+            </div>
+
+            <ul class="clean-list join-why-list">
+              ${data.recruit.whyJoin.bullets.map((item) => `<li>${item}</li>`).join("")}
+            </ul>
+          </article>
+        </div>
       </section>
     `;
   }
+
+  // function renderJoin() {
+  //   const main = document.getElementById("page-root");
+  //   main.innerHTML = `
+  //     <section class="page-hero container reveal visible">
+  //       <span class="eyebrow">Join us</span>
+  //       <h1>Work with the lab</h1>
+  //       <p>We welcome self-motivated students and collaborators who are interested in NLP and AI research. Reach out with a short introduction, research interests, desired positions and CV.</p>
+  //     </section>
+  //     <section class="section">
+  //       <div class="container join-layout">
+  //         <article class="card join-card reveal">
+  //           <h2>Opportunities</h2>
+  //           <ul class="clean-list">
+  //             ${data.recruit.regular.map((item) => `<li>${item}</li>`).join("")}
+  //           </ul>
+  //           <div class="contact-panel">
+  //             <p><strong>Contact</strong></p>
+  //             <a class="inline-link" href="mailto:${data.lab.email}">${data.lab.email}</a>
+  //             <p>${data.lab.address}</p>
+  //           </div>
+  //         </article>
+  //         <article class="card urgent-card reveal delay-1">
+  //           <h2>Openings</h2>
+  //           <div class="urgent-list">
+  //             ${data.recruit.urgent
+  //               .map(
+  //                 (item) => `
+  //                   <section class="urgent-item">
+  //                     <h3>${item.title}</h3>
+  //                     <p>${item.summary}</p>
+  //                     <div class="tag-row">
+  //                       ${item.needs.map((x) => `<span class="tag">${x}</span>`).join("")}
+  //                     </div>
+  //                     <a class="inline-link" href="mailto:${item.contact}">${item.contact}</a>
+  //                   </section>
+  //                 `
+  //               )
+  //               .join("")}
+  //           </div>
+  //         </article>
+  //       </div>
+  //     </section>
+  //   `;
+  // }
 
   renderHeader();
   renderFooter();

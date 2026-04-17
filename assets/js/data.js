@@ -259,10 +259,32 @@ window.LAB_DATA = {
       image: "assets/img/activity_elena_kaiyang_2026_03.JPG"
     },
     {
-      title: "Group Meals",
-      caption: "Casual weekend lunches or dinners to cook, talk, and bond beyond work.",
-      image: "assets/img/activity_yun_meal_2026_03.jpg"
+      title: "Group Memory",
+      caption: "Sweet moments of our time together.",
+      image: "assets/img/memory_2026_0318_yun_meal.jpg",
+      link: "memory.html"
     }
+  ],
+  memoryRecords: [
+    {
+      title: "Lab Dinner - Yun",
+      description: "An evening gathering to welcome new members.",
+      date: "2026-03-18",
+      image: "assets/img/memory_2026_0318_yun_meal.jpg"
+    },
+    {
+      title: "Conference Trip - Rabat Morocco",
+      description: "Kaiyang and Yuxia attended EACL 2026, together with Dr. Yue Feng and Dr. Rui Xing.",
+      date: "2026-03-28",
+      image: "assets/img/memory_2026_0328_eacl2026.png"
+    },
+    {
+      title: "Prof. Preslav from MBZUAI Visit Us",
+      description: "We hosted Prof. Preslav for research discussions and a lab dinner.",
+      date: "2026-04-07",
+      image: "assets/img/memory_2026_0407_prof_preslav_visit.png"
+    },
+    
   ],
   connections: [
     { name: "Institute for AI Safety", type: "Research Partner" },

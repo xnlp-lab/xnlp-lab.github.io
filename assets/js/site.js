@@ -386,13 +386,57 @@
       <section class="section">
         <div class="container activity-grid">
           ${data.activities
-            .map(
-              (activity, idx) => `
+            .map((activity, idx) => {
+              const cardInner = `
+                <img src="${activity.image}" alt="${activity.title}" />
+                <div class="activity-copy">
+                  <h3>${activity.title}</h3>
+                  <p>${activity.caption}</p>
+                </div>
+              `;
+
+              if (activity.link) {
+                return `
+                  <a class="card activity-card activity-link reveal delay-${idx % 3}" href="${activity.link}">
+                    ${cardInner}
+                  </a>
+                `;
+              }
+
+              return `
                 <article class="card activity-card reveal delay-${idx % 3}">
-                  <img src="${activity.image}" alt="${activity.title}" />
-                  <div class="activity-copy">
-                    <h3>${activity.title}</h3>
-                    <p>${activity.caption}</p>
+                  ${cardInner}
+                </article>
+              `;
+            })
+            .join("")}
+        </div>
+      </section>
+    `;
+  }
+
+  function renderMemory() {
+    const main = document.getElementById("page-root");
+    main.innerHTML = `
+      <section class="page-hero container reveal visible">
+        <span class="eyebrow">Group Memory</span>
+        <h1>Moments we keep</h1>
+        <p>A shared archive of visits, talks, conferences, celebrations, and everyday lab moments.</p>
+      </section>
+
+      <section class="section">
+        <div class="container memory-list">
+          ${(data.memoryRecords || [])
+            .map(
+              (item, idx) => `
+                <article class="card memory-item reveal delay-${idx % 3}">
+                  <div class="memory-image">
+                    <img src="${item.image}" alt="${item.title}" loading="lazy" />
+                  </div>
+                  <div class="memory-copy">
+                    <span class="timeline-date">${item.date}</span>
+                    <h3>${item.title}</h3>
+                    <p>${item.description}</p>
                   </div>
                 </article>
               `
@@ -402,7 +446,6 @@
       </section>
     `;
   }
-
   // function renderConnections() {
   //   const main = document.getElementById("page-root");
   //   main.innerHTML = `
@@ -461,7 +504,7 @@
             </ul>
           </article>
         </div>
-        
+
         <div class="container join-layout">
           <article class="card join-card reveal">
             <h2>Opportunities</h2>
@@ -519,6 +562,9 @@
       break;
     case "activities":
       renderActivities();
+      break;
+    case "memory":
+      renderMemory();
       break;
     // case "connections":
     //   renderConnections();

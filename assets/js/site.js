@@ -482,6 +482,7 @@
         <h1>Work with the lab</h1>
         <p>We welcome self-motivated students and collaborators who are interested in NLP and AI research. Reach out with a short introduction, research interests, desired positions and CV.</p>
       </section>
+
       <section class="section">
         <div class="container">
           <article class="card join-why-card reveal">
@@ -505,7 +506,7 @@
           </article>
         </div>
 
-        <div class="container join-layout">
+        <div class="container join-stack">
           <article class="card join-card reveal">
             <h2>Opportunities</h2>
             <ul class="clean-list">
@@ -517,9 +518,10 @@
               <p>${data.lab.address}</p>
             </div>
           </article>
+
           <article class="card urgent-card reveal delay-1">
             <h2>Openings</h2>
-            <div class="urgent-list">
+            <div class="urgent-list urgent-list-grid">
               ${data.recruit.urgent
                 .map(
                   (item) => `
@@ -537,8 +539,6 @@
             </div>
           </article>
         </div>
-
-        
       </section>
     `;
   }

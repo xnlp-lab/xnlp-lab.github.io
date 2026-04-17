@@ -506,7 +506,19 @@ img { display: block; max-width: 100%; }
 .join-card, .urgent-card {
   display: grid;
   gap: 16px;
-  align-self: start;
+  align-self: auto;
+}
+
+.join-stack {
+  display: grid;
+  gap: 22px;
+  margin-top: 22px;
+}
+
+.urgent-list-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
 }
 
 /* --- Why Join Section --- */
@@ -646,6 +658,10 @@ img { display: block; max-width: 100%; }
 
 @media (max-width: 860px) {
   .memory-list {
+    grid-template-columns: 1fr;
+  }
+
+  .urgent-list-grid {
     grid-template-columns: 1fr;
   }
 }

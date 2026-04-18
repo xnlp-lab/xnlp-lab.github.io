@@ -17,8 +17,8 @@ window.LAB_DATA = {
     ],
     stats: [
       { value: "4", label: "Students" },
-      { value: "10", label: "International Collaborators" },
-      { value: "3", label: "Research Topics" },
+      { value: "9", label: "International Collaborators" },
+      { value: "4", label: "Research Topics" },
       { value: "3+", label: "Openings" },
     ]
   },
@@ -283,6 +283,12 @@ window.LAB_DATA = {
       description: "We hosted Prof. Preslav for research discussions and a lab dinner.",
       date: "2026-04-07",
       image: "assets/img/memory_2026_0407_preslav_visit.png"
+    },
+    {
+      title: "Happy Saturday Climbing",
+      description: "Elena, Asen and Kaiyang went climbing.",
+      date: "2026-04-18",
+      image: "assets/img/memory_2026_0418_climbing.png"
     },
     
   ],

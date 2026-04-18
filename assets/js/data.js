@@ -260,7 +260,7 @@ window.LAB_DATA = {
     },
     {
       title: "Group Memory",
-      caption: "Sweet moments of our time together.",
+      caption: "Sweet moments of our time together. [Click to see more]",
       image: "assets/img/memory_2026_0318_yun_meal.jpg",
       link: "memory.html"
     }
